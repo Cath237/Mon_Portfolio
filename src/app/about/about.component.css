@@ -1,0 +1,172 @@
+.about{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 100px 10%;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+.about-image{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.image-container{
+    width: 350px;
+    height: 350px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 4px solid #7c3aed;
+
+    box-shadow: 0 0 40px rgba(124,58,237,0.4);
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h4{
+    color: #7c3aed;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.about-content h2{
+    font-size: 42px;
+
+    margin-bottom: 25px;
+}
+
+.about-content h2 span{
+    color: #38bdf8;
+}
+
+.about-content p{
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+.about-cards{
+    display: flex;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+.card{
+    flex: 1;
+
+    background: #1e293b;
+
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    background: #334155;
+}
+
+.card i{
+    font-size: 40px;
+
+    color: #7c3aed;
+
+    margin-bottom: 20px;
+}
+
+.card h3{
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+.card p{
+    font-size: 15px;
+
+    margin: 0;
+}
+
+.about-btn{
+    display: inline-block;
+
+    padding: 14px 35px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.about-btn:hover{
+    background: #6d28d9;
+
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 950px){
+
+    .about{
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .about-cards{
+        flex-direction: column;
+    }
+
+    .about-content h2{
+        font-size: 32px;
+    }
+
+    .image-container{
+        width: 280px;
+        height: 280px;
+    }
+
+}
