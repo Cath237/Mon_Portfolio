@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Portfolio</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,6 +13,59 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   body{
     background: #020617;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* IMAGES */
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* CONTAINERS */
+
+section{
+    overflow: hidden;
+}
+
+/* TABLETTES */
+
+@media(max-width: 1024px){
+
+    section{
+        padding: 80px 5% !important;
+    }
+
+}
+
+/* TELEPHONES */
+
+@media(max-width: 768px){
+
+    h1{
+        font-size: 40px !important;
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    h3{
+        font-size: 22px !important;
+    }
+
+    p{
+        font-size: 15px !important;
+    }
+
 }
 </style>
 <body>

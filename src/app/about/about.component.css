@@ -170,3 +170,15 @@
     }
 
 }
+
+@media(max-width: 768px){
+
+    .about{
+        gap: 40px;
+    }
+
+    .about-content{
+        text-align: center;
+    }
+
+}

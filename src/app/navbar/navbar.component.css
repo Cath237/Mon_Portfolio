@@ -5,6 +5,13 @@
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar{
     width: 100%;
     height: 80px;
 
@@ -101,6 +108,69 @@
 
     .menu-toggle{
         display: block;
+    }
+
+}
+
+/* TABLET */
+
+@media(max-width: 900px){
+
+    .navbar{
+        padding: 0 5%;
+    }
+
+    .menu-toggle{
+        display: block;
+        z-index: 2000;
+    }
+
+    .nav-links{
+
+        position: fixed;
+
+        top: 80px;
+        right: -100%;
+
+        width: 280px;
+        height: calc(100vh - 80px);
+
+        background: #0f172a;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        transition: 0.4s;
+
+        gap: 40px;
+    }
+
+    .nav-links.active{
+        right: 0;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width: 500px){
+
+    .home{
+        padding-top: 140px !important;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .project-buttons{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        padding: 25px !important;
     }
 
 }

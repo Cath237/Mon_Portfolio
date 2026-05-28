@@ -181,3 +181,25 @@
     }
 
 }
+
+@media(max-width: 768px){
+
+    .home{
+        text-align: center;
+    }
+
+    .home-content p{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .image-box{
+        width: 220px;
+        height: 220px;
+    }
+
+}

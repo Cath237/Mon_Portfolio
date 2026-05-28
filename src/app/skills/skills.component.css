@@ -147,3 +147,11 @@
     }
 
 }
+
+@media(max-width: 768px){
+
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+
+}
